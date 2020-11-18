@@ -1,0 +1,12 @@
+version : '3'
+
+services:
+  node_app:
+    build: ./node_app
+    ports:
+    - "8080:8080"
+  my-app:
+    build: ./my-app
+    stdin_open: true
+    ports:
+    - "3000:3000"
